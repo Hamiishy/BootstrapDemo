@@ -12,16 +12,18 @@
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
-            background-color: #f2f2f2;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
         }
+
         .jumbotron {
-            
-            background-size: cover;
-            color: rgb(83, 101, 156);
+            background-color: #e3f2fd;
+            color: #053b43;
             padding: 100px 25px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
             margin-bottom: 0;
-    
+            position: relative;
         }
         
         .jumbotron h1 {
@@ -50,40 +52,46 @@
             top: 20px;
             left: 20px;
             font-size: 16px;
-            background: rgba(228, 7, 7, 0.5);
+            background: rgba(228, 7, 7, 0.8);
             color:white;
             padding: 10px 15px;
             border-radius: 5px;
         }
-        .side-picture {
-            position: absolute;
-            top: 400px;
-            right: 40px
+
+        .side-picture img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
         }
-        
+
         .container-fluid {
             padding: 60px 50px;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 40px;
         }
-        
-        .container {
-            max-width: 900px;
+
+        .containerConB {
+            padding: 60px 50px;
+            background-color: rgb(5, 43, 43);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            color: white;
         }
         
         h2 {
             font-family: 'Roboto', sans-serif;
             font-weight: 600;
             color: #333;
+            margin-bottom: 30px;
         }
         
         h4 {
             color: #666;
             line-height: 1.6;
         }
-        
-        .btn-custom {
+
+        .btn-custom, .btn-custom1 {
             background-color: #d9534f;
             color: white;
             padding: 10px 20px;
@@ -93,24 +101,30 @@
             font-weight: 600;
         }
         
-        .btn-custom:hover {
+        .btn-custom:hover, .btn-custom1:hover {
             background-color: #c9302c;
             color: #fff;
         }
+
         .btn-custom1 {
             background-color: rgb(5, 43, 43);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 4px;
-            font-size: 16px;
-            text-transform: uppercase;
-            font-weight: 600;
         }
+
+        
+        .section-padding {
+            margin-bottom: 40px;
+        }
+
+        .button-padding {
+            margin-bottom: 10px;
+        }
+
+    
         
     </style>
 </head>
 <body>
-    
+
     <div class="jumbotron text-center">
         <h1>Penny Juice</h1>
         <p>IT MAKES CENTS</p>
@@ -121,25 +135,49 @@
     </div>
 
     <div class="top-left">
-        AMERICA'S JUICE
+        <a href="govt.html" class="btn btn-custom1" role="button">FDA WEBSITE</a>
     </div>
 
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center section-padding">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-6">
                 <h2>About Penny Juice</h2>
                 <h4>We offer 15 flavors, including 7 color-free options. Each case contains 6 half-gallon bottles of your choice, designed especially for childcare, daycare, preschools, and extended care programs. Get in touch with us today!</h4>
                 <a href="https://youtube.com" class="btn btn-custom1" role="button">Get in touch</a>
             </div>
+            <div class="col-sm-6 side-picture">
+                <img src="juice-drinking.jpg" class="img-rounded" alt="Juice Drinking">
+            </div>
         </div>
     </div>
 
-    <div class="side-picture">
-        <img src="juice-drinking.jpg" class="img-rounded" height="350" width="450">
+    <div class="container-fluid text-center section-padding">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>Healthy Juice Concentrate for All Kids to Enjoy</h2>
+                <p>We provide a variety of flavors that all kids can enjoy! Most of the juice concentrates that we sell are compliant with USDA and FDA guidelines. You don't need to refrigerate the concentrates before or after opening them.</p>
+            </div>
+        </div>
     </div>
-    <script>    
 
-    </script>
+    <div class="container-fluid section-padding">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>More info:</h2>
+            </div>
+            <div class="col-sm-4">
+                <a href="https://instagram.com" class="btn btn-custom1 button-padding">Instagram</a>
+                <br>
+                <a href="https://facebook.com" class="btn btn-custom1 button-padding">Facebook</a>
+                <br>
+                <a href="https://X.com" class="btn btn-custom1 button-padding">Twitter</a>
+                <br>
+                <a href="https://youtube.com" class="btn btn-custom1 button-padding">Youtube</a>
+                <br>
+
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
