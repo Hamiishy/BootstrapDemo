@@ -53,7 +53,7 @@
             left: 20px;
             font-size: 16px;
             background: rgba(228, 7, 7, 0.8);
-            color:white;
+            color: white;
             padding: 10px 15px;
             border-radius: 5px;
         }
@@ -110,17 +110,35 @@
             background-color: rgb(5, 43, 43);
         }
 
-        
+       
         .section-padding {
             margin-bottom: 40px;
         }
 
+        
         .button-padding {
             margin-bottom: 10px;
         }
 
-    
         
+        .more-info {
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .top-right, .top-left {
+                font-size: 14px;
+                padding: 5px 10px;
+            }
+            .jumbotron h1 {
+                font-size: 3em;
+            }
+        }
+        .banner-picture {
+            display: flex ;
+            justify-content: center;
+             }
+    
     </style>
 </head>
 <body>
@@ -143,7 +161,7 @@
             <div class="col-sm-6">
                 <h2>About Penny Juice</h2>
                 <h4>We offer 15 flavors, including 7 color-free options. Each case contains 6 half-gallon bottles of your choice, designed especially for childcare, daycare, preschools, and extended care programs. Get in touch with us today!</h4>
-                <a href="https://youtube.com" class="btn btn-custom1" role="button">Get in touch</a>
+                <a href="https://open.spotify.com/show/7KCh1Z181LOIh3IP6EbqNR" class="btn btn-custom1" role="button">Get in touch</a>
             </div>
             <div class="col-sm-6 side-picture">
                 <img src="juice-drinking.jpg" class="img-rounded" alt="Juice Drinking">
@@ -151,33 +169,34 @@
         </div>
     </div>
 
-    <div class="container-fluid text-center section-padding">
+    <div class="container-fluid section-padding text-center">
         <div class="row">
-            <div class="col-sm-8">
+            <div class="col-sm-8 col-sm-offset-2">
                 <h2>Healthy Juice Concentrate for All Kids to Enjoy</h2>
                 <p>We provide a variety of flavors that all kids can enjoy! Most of the juice concentrates that we sell are compliant with USDA and FDA guidelines. You don't need to refrigerate the concentrates before or after opening them.</p>
             </div>
         </div>
     </div>
+    <div class="banner-picture">
+        <img src ="a-front-view-fresh-fruit-cocktails-with-fresh-fruit-slices-ice-cooling-on-blue-drink-juice-co-free-photo.jpg">
+    </div>
 
-    <div class="container-fluid section-padding">
-        <div class="row">
-            <div class="col-sm-8">
-                <h2>More info:</h2>
-            </div>
-            <div class="col-sm-4">
-                <a href="https://instagram.com" class="btn btn-custom1 button-padding">Instagram</a>
-                <br>
-                <a href="https://facebook.com" class="btn btn-custom1 button-padding">Facebook</a>
-                <br>
-                <a href="https://X.com" class="btn btn-custom1 button-padding">Twitter</a>
-                <br>
-                <a href="https://youtube.com" class="btn btn-custom1 button-padding">Youtube</a>
-                <br>
-
+        <div class="container-fluid section-padding text-center">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h2>More info:</h2>
+             </div>
+             <div class="col-sm-4 col-sm-offset-4 more-info">
+                    <a href="https://instagram.com" class="btn btn-custom1 button-padding">Instagram</a>
+                    <br>
+                    <a href="https://facebook.com" class="btn btn-custom1 button-padding">Facebook</a>
+                    <br>
+                    <a href="https://X.com" class="btn btn-custom1 button-padding">Twitter</a>
+                    <br>
+                    <a href="https://youtube.com" class="btn btn-custom1 button-padding">Youtube</a>
+                </div>
             </div>
         </div>
     </div>
-
 </body>
 </html>
